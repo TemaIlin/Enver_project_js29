@@ -55,3 +55,80 @@ body {
   border: 1px solid white;
 }
 /* navbar styles end */
+
+/* header styles start */
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.header__block_left {
+  width: 40%;
+}
+
+.header__title_left {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 80px;
+  line-height: 1;
+  margin-bottom: 0;
+  letter-spacing: 5px;
+}
+
+.header__desc_left {
+  font-size: 21px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.header__btn {
+  width: 35%;
+  height: 60px;
+  background: #5454d4;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 1%;
+}
+
+.btn__icon {
+  margin-left: 8px;
+}
+
+.header__block_right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.vector {
+  position: absolute;
+}
+
+#vector_1 {
+  top: 124px;
+  left: -81px;
+}
+
+#vector_2 {
+  top: 77px;
+  right: 54px;
+}
+
+#vector_3 {
+  left: -130px;
+  bottom: 10px;
+}
+
+#vector_4 {
+  right: 40px;
+  bottom: 54px;
+}
+/* header styles end */
