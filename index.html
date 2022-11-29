@@ -19,6 +19,27 @@
     <img src="./images/bg_4.png" alt="error:(" class="bg_gradient">
 
     <div class="container">
+
+        <!-- burger start -->
+            <div class="burger-menu">
+                <div class="burger-menu__content">
+                    <img src="/images/close_img.png" alt="error :(" class="burger-menu__btn_close">
+                    <input type="text" class="burger-menu_input">
+                    <ul class="burger-menu__list">
+                        <li class="burger-menu__item">
+                            <a href="#"></a>Home</li>
+                        <li class="burger-menu__item">
+                            <a href="#"></a>Services</li>
+                        <li class="burger-menu__item">
+                            <a href="#"></a>Our Project</li>
+                        <li class="burger-menu__item">
+                            <a href="#"></a>About Us</li>
+
+                    </ul>
+                </div>
+            </div>
+        <!-- burger end -->
+
         <!-- navbar start -->
         <div class="navbar">
             <img src="./images/logo.png" alt="error:(" class="navbar__logo">
@@ -37,6 +58,8 @@
                 </li>
             </ul>
             <input type="text" class="navbar__input">
+        <img src="/images/burger_btn.png" alt="ghghghgerror :(" class="navbar__btn_burger">
+
         </div>
         <!-- navbar end -->
 
@@ -119,6 +142,7 @@
                 </li>
             </ul>
             <img src="./images/portfolio_carousel_icon.png" alt="error:(" class="portfolio__icon">
+            <img src="/images/on_of.png" alt="error:(" class="portfolio__icon_second">
         </div>
         <!-- portfolio end -->
 
@@ -143,5 +167,19 @@
         </footer>
         <!-- footer end -->
     </div>
+
+        <script>
+            let openBtn = document.querySelector('.navbar__btn_burger');
+            let closeBtn = document.querySelector ('.burger-menu__btn_close');
+            let burgerMenu =document.querySelector('.burger-menu');
+            
+            openBtn.addEventListener('click',()=>{
+                burgerMenu.style.display='block';
+            })
+
+            closeBtn.addEventListener('click',()=>{
+                burgerMenu.style.display='none';
+            })
+        </script>
 </body>
 </html>

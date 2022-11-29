@@ -61,6 +61,12 @@ body {
   border-radius: 5px;
   border: 1px solid white;
 }
+
+.navbar__btn_burger{
+  width: 3%;
+  height: 3%;
+  display: none;
+}
 /* navbar styles end */
 
 /* header styles start */
@@ -227,6 +233,12 @@ header {
   display: block;
   margin: 50px auto 0;
 }
+
+.portfolio__icor_second{
+  display: block;
+  margin: 50px auto 0;
+  display: none;
+}
 /* portfoli styles end */
 
 /* info-block styles start */
@@ -276,3 +288,65 @@ footer {
   width: 30%;
 }
 /* footer styles end */
+
+
+/* burger menu styles start */
+.burger-menu{
+  display: none;
+  width: 98%;
+  height: min-content;
+  background: #2c2c33;
+  border-radius: 10px;
+  border: 2px solid white;
+  position: absolute;
+  z-index: 1;
+  top: 1%;
+  left: 1%;
+  right: 1%;
+}
+
+.burger-menu__content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.burger-menu__btn_close{
+  margin: 4% 0;
+  width: 5%;
+  height: 5%;
+  cursor: pointer;
+}
+
+.burger-menu__input{
+  width: 30%;
+  height: 15%;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+
+.burger-menu__list{
+  height: 60%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+.burger-menu__item>a{
+  text-decoration: none;
+  color: white;
+  transition: 0.8s;
+}
+
+
+.burger-menu__item>:hover{
+  color: #5454d4;
+  transition: 0.8s;
+}
+/* burger menu styles end */
